@@ -8,8 +8,8 @@ let photosArray = [];
 
 // Unsplash API
 let count = 5;
-const apiKey = '96doywwqdRcbg_fXedhk7oBvJkTInbmX2KmcwzdRZas';
-let apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=japan_autumn`;
+const apiKey = 'UA9wuwnEHNRPRGD_CahW5lgUcGAbNseLvGgbgMgmJdY';
+let apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=japan autumn`;
 
 // Check if all images were loaded
 function imageLoaded() {
