@@ -28,7 +28,7 @@ function imageLoaded() {
   if (imagesLoaded === totalImages) {
     ready = true;
     loader.hidden = true;
-    count = 10;
+    count = 3;
   }
 }
 
@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
   // console.log('window.scrollY: ', window.scrollY);
   // console.log('window.innerHeight + scrollY: ', window.innerHeight + window.scrollY);
   // console.log('document.body.offsetHeight - 1000: ', document.body.offsetHeight - 1000);
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready) {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200 && ready) {
     getPhotos();
     ready = false;
   }
