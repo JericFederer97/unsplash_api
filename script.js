@@ -10,15 +10,15 @@ let photosArray = [];
 // Unsplash API
 let count = 5;
 const apiKey = 'UA9wuwnEHNRPRGD_CahW5lgUcGAbNseLvGgbgMgmJdY';
-var apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${1}&query=code`;
+var apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=code`;
 
 if (pathName.includes("piano")) {
   apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=piano`;
 } else if (pathName.includes("nightsky")) {
-  apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=nightsky`;
+  apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=moon`;
 } else if (pathName.includes("universe")) {
   apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=universe`;
-} else if (pathName.includes("ghibli")) {
+} else if (pathName.includes("aurora")) {
   apiURL = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=aurora`;
 }
 
@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
   // console.log('window.scrollY: ', window.scrollY);
   // console.log('window.innerHeight + scrollY: ', window.innerHeight + window.scrollY);
   // console.log('document.body.offsetHeight - 1000: ', document.body.offsetHeight - 1000);
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200 && ready) {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500 && ready) {
     getPhotos();
     ready = false;
   }
